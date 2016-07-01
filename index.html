@@ -1,0 +1,110 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Columns</title>
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+    <div role="main" class="page">
+        <div class="chunk">
+            <h1>CSS Associates Style Rules with HTML Elements</h1>
+            <h2>CSS Works by associating rules with HTML Elements. These rules govern how the content of specified elements should be displayed. A CSS rule contains two parts: a <span class="selector">selector</span> and a <span class="declaration">declaration</span>.</h2>
+            <div class="code-block">
+                <span class="selector">p</span> {
+                <br> &nbsp;&nbsp;
+                <span class="declaration">font-family: Arial;</span>
+                <br> }
+            </div>
+            <div class="summary-block">
+                <p class="summary">
+                    This rule indicates that all <span class="code-font">&lt;p&gt;</span> elements should be shown in the Arial typeface.
+                </p>
+                <p class="summary">
+                    <span class="selector">Selectors</span> indicate which element the rule applies to. The same rule can apply to more than one element if you separate the element names with commas.
+                </p>
+                <p class="summary">
+                    <span class="declaration">Declarations</span> indicate how the elements referred to in the selector should be styled. Declarations are split into two parts (a property and a value), and are separated by a colon.
+                </p>
+            </div>
+        </div>
+        <div class="chunk">
+            <h1>CSS Properties affect how Elements are displayed</h1>
+            <h2>CSS declarations sit inside curly brackets and each is made up of two parts: a <span class="property">property</span> and a <span class="value">value</span>, separated by a colon. You can specify several properties in one declaration, each separated by a semi-colon.</h2>
+            <div class="code-block">
+                h1, h2, h3 {
+                <br> &nbsp;&nbsp;
+                <span class="property">font-family:</span> <span class="value">Arial;</span>
+                <br> &nbsp;&nbsp;
+                <span class="property">color:</span> <span class="value">yellow;</span>
+                <br> }
+            </div>
+            <div class="summary-block">
+                <p class="summary">
+                    This rule indicates that all <span class="code-font">&lt;h1&gt;</span>, <span class="code-font">&lt;h2&gt;</span> and <span class="code-font">&lt;h3&gt;</span> elements should be shown in the Arial typeface, in a yellow color.
+                </p>
+
+                <p class="summary">
+                    <span class="property">Properties</span> indicate the aspects of the element you want to change. For example, color, font, width, height and border.
+                </p>
+
+                <p class="summary">
+                    <span class="value">Values</span> specify the settings you want to use for the chosen properties. For example, if you want to specify a color property then the value is the color you want the text in these elements to be.
+                </p>
+            </div>
+        </div>
+        <div class="chunk">
+            <h1>CSS Selectors determine which Elements are affected</h1>
+            <h2>There are many different types of CSS selectors that allow you to target rules to specific elements in an HTML document.</h2>
+
+            <table id="selector-table">
+                <tr>
+                    <td>Selector</td>
+                    <td>Meaning</td>
+                    <td>Example</td>
+                </tr>
+                <tr>
+                    <td class="selector">Universal selector</td>
+                    <td>Applies to all elements in the document</td>
+                    <td>
+                        <span class="code-font selector">* {}</span>
+                        <br> Targets all elements on the page
+                    </td>
+                </tr>
+                <tr>
+                    <td class="selector">Type selector</td>
+                    <td>Matches element names</td>
+                    <td>
+                        <span class="code-font selector">h1, h2, h3 {}</span>
+                        <br> Targets the <span class="code-font">&lt;h1&gt;</span>, <span class="code-font">&lt;h2&gt;</span> and <span class="code-font">&lt;h3&gt;</span> elements.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="selector">Class Selector</td>
+                    <td>Maches an element whose <span class="code-font">class</span> attribute has a value that matches the one specified after the period (or full stop) symbol</td>
+                    <td>
+                        <span class="code-font selector">.note {}</span>
+                        <br> Targets any element whose <span class="code-font">class</span> attribute has a value of <span class="code-font">note</span>.
+                        <br>
+                        <span class="code-font selector">p.note {}</span>
+                        <br> Targets only <span class="code-font">&lt;p&gt;</span> elements whose <span class="code-font">class</span> attribute has a value of <span class="code-font">note</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="selector">ID Selector</td>
+                    <td>Matches an element whose <span class="code-font">class</span> attribute has a value that matches the one specified after the pound or hash symbol</td>
+                    <td>
+                        <span class="code-font selector">#introduction {}</span>
+                        <br> Targets the element whose <span class="code-font">id</span> attribute has a value of <span class="code-font">introduction</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
